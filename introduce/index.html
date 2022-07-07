@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Bá Thái</title>
+    <style>
+        .content {
+            display: flex;
+            flex-direction: row;
+            background-color: #fafafa;
+        }
+        .content_left {
+            padding: 10px;
+            display: flex;
+            flex: 2;
+            justify-content: center;
+        }
+        .title {
+           display: flex;
+           align-items: center;
+        }
+        .color_main {
+            color: darkcyan;
+        }
+        .content_right {
+            padding: 10px;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            background-color: darkcyan;
+            color: white;
+        }
+        #avatar {
+            border-radius: 50%;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content_left">
+           <div class="infor">
+                <div class="name">
+                    <h2 class="color_main">Hồ Bá Thái</h2>
+                    <p>Sinh viên</p>
+                </div>
+                
+               <div class="item">
+                    <div class="title">
+                        <img src="./image/information.png" alt="" class="icon">
+                        <span class="color_main">Kiến thức đang có</span>
+                    </div>
+                    <hr/>
+                    <ul>
+                        <li>java hướng đối tượng</li>
+                        <li>python cơ bản</li>
+                        <li>html, css, javascript cơ bản</li>
+                        <li>sql cơ bản</li>
+                    </ul>
+               </div>
+            <div class="item">
+                <div class="title">
+                    <img src="./image/target.png" alt="" class="icon">
+                    <span class="color_main">Mục tiêu nghề nghiệp</span>
+                </div>
+                <hr/>
+                <p>
+                    Trở thành FrontEnd Developer <br/>
+                    Ra trường với trình độ của Fresher.
+                    Mức lương khi ra trường tầm từ 12-15 triệu.
+                </p>
+                <div>
+                    Mục tiêu trong 3 tháng: <br/>
+                    Cố gắng nắm vững kiến thức cơ bản về frontend: 
+                    <ul>
+                        <li>html, css, javascript</li>
+                        <li>reactJS</li>
+                    </ul>
+                    Tìm hiểu thêm kiến thức về backend
+                </div>
+                <div>
+                    Mục tiêu trong 6 tháng: <br/>
+                    <ul>
+                        <li>Không phải học lại môn nào trên trường, điểm tích lũy được trên 2.5</li>
+                        <li>Bắt đầu đi thực tập partime về reactJS</li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="content_right">
+            <img src="./image/avatar.jpg" alt="ảnh đại diện" id="avatar" width="200px" height="200px">
+           <div class="title">
+                <img src="./image/user.png" alt="" class="icon">
+                <h2>Thông tin cá nhân</h2>
+           </div>
+            <p>Ngày sinh: 24/01/2001</p>
+            <p>Quê quán: Quỳnh Lưu, Nghệ An</p>
+            <p>Sở thích: xem anime, phim hành động; <br/>nghe nhạc indie, nhạc lofi.</p>
+            <p>Trình độ học vấn: Đại học</p>
+            <span>sinh viên năm 3, </span>
+            <span>Học viện Công nghệ Bưu chính Viễn thông</span>
+        </div>
+    </div>
+</body>
+</html>
