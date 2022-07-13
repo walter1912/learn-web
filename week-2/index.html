@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Bá Thái</title>
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content__left">
+            <div class="header">
+                <img src="./imgs/avatar-2.jpg" class="header__avatar" alt="avatar" width="120px" height="120px" />
+                <div class="header__title">
+                    <h1 class="main-color">Hồ Bá Thái</h1>
+                    <p>Sinh viên</p>
+                </div>
+            </div>
+
+            <div class="left__item" onclick="toggleHidden(this)">
+                <div class="item__title">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    Mục tiêu
+                </div>
+                <div class="item__body">
+                    <p>
+                        Trở thành FrontEnd Developer <br />
+                        Ra trường với trình độ của Fresher.
+                        Mức lương khi ra trường tầm từ 12-15 triệu.
+                    </p>
+                    <div>
+                        <h3 class="main-color"> Mục tiêu trong 3 tháng: </h3>
+                        Cố gắng nắm vững kiến thức cơ bản về frontend:
+                        <ul>
+                            <li>HTML, CSS, javascript</li>
+                            <li>reactJS</li>
+                        </ul>
+                        Tìm hiểu thêm kiến thức về backend
+                    </div>
+                    <div>
+                        <h3 class="main-color">Mục tiêu trong 6 tháng:</h3>
+                        <p>Bắt đầu đi thực tập partime về reactJS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left__item" onclick="toggleHidden(this)">
+                <div class="item__title">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    Đào tạo
+                </div>
+                <div class="item__body">
+                    <h3 class="main-color">Học viện Công nghệ Bưu chính Viễn thông</h3>
+                    <p>Chuyên ngành: Công nghệ thông tin</p>
+                    <p>Sinh viên năm 3</p>
+                    <div class="infor-icon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>08-2019 đến 08-2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left__item" onclick="toggleHidden(this)">
+                <div class="item__title">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    Sở thích
+                </div>
+                <div class="item__body">
+                    <p>Đọc sách, nghe nhạc, xem phim</p>
+                    <p>Code</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content__right">
+            <div class="right__item">
+                <div class="item__title">
+                    Thông tin
+                </div>
+                <div class="item__body">
+                    <div class="infor-icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>Nam</span>
+                    </div>
+                    <div class="infor-icon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>24-01-2001</span>
+                    </div>
+                    <div class="infor-icon">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span>0377241628</span>
+                    </div>
+                    <div class="infor-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>hobathai1912@gmail.com</span>
+                    </div>
+                    <div class="infor-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Nguyễn Văn Trỗi, Mỗ Lao, Hà Đông</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right__item">
+                <div class="item__title">Lập trình</div>
+                <div class="item__body">
+                    <div class="skill-range">
+                        <h5 class="title">HTML</h5>
+                        <input class="input-range" type="range" name="html" id="html" value="50" maxlength="200">
+                        <span class="value">Basic</span>
+                    </div>
+                    <div class="skill-range">
+                        <h5 class="title">CSS</h5>
+                        <input class="input-range" type="range" name="css" id="css" value="50" maxlength="400">
+                        <span class="value">Basic</span>
+                    </div>
+                    <div class="skill-range">
+                        <h5 class="title">Javascript</h5>
+                        <input class="input-range" type="range" name="javascript" id="javascript" value="50"
+                            maxlength="400">
+                        <span class="value">Basic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right__item">
+                <div class="item__title">Tin học văn phòng</div>
+                <div class="item__body">
+                    <div class="skill-range">
+                        <h5 class="title">Word</h5>
+                        <input class="input-range" type="range" name="html" id="html" value="50" maxlength="400">
+                        <span class="value">Basic</span>
+                    </div>
+                    <div class="skill-range">
+                        <h5 class="title">Excel</h5>
+                        <input class="input-range" type="range" name="css" id="css" value="50" maxlength="400">
+                        <span class="value">Basic</span>
+                    </div>
+                    <div class="skill-range">
+                        <h5 class="title">Powerpoint</h5>
+                        <input class="input-range" type="range" name="javascript" id="javascript" value="50"
+                            maxlength="400">
+                        <span class="value">Basic</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function toggleHidden(e) {
+            console.log("this: ", e);
+            console.log("this.getChildren: ", e.getElementsByClassName("item__title")[0].outerText);
+            const icon = e.querySelector("i");
+            const body = e.getElementsByClassName("item__body")[0];
+
+            if (body.style.display === "none") {
+                body.style.display = "block";
+                icon.classList.remove('fa-chevron-circle-right');
+                icon.classList.add("fa-chevron-circle-down");
+            }
+            else {
+                body.style.display = "none";
+                icon.classList.remove('fa-chevron-circle-down');
+                icon.classList.add("fa-chevron-circle-right");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
