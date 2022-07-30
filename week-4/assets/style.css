@@ -1,0 +1,257 @@
+:root {
+    --red-color: #FF6464;
+    --white-color: #fafafa;
+    --bgr-color: #EDF7FA;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Heebo";
+    font-size: 16px;
+    color: #21243D;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container section {
+    padding: 0 80px;
+}
+
+.header {
+    font-weight: 700;
+}
+
+.header__bars {
+    display: none;
+}
+
+.header-body {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu__nav {
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.introduce {
+    margin: 40px 0;
+    flex-direction: row;
+}
+
+.introduce__infor {
+    flex-direction: column;
+    padding-right: 40px;
+    max-width: 540px;
+}
+
+.introduce__infor .header {
+    font-size: 2.75rem;
+    font-weight: 700;
+    max-width: 460px;
+}
+
+.introduce__infor .download {
+    color: var(--white-color);
+    background-color: var(--red-color);
+    max-width: 208px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.introduce__img {
+    margin: 0 40px;
+    border-radius: 50%;
+}
+
+.post {
+    background-color: var(--bgr-color);
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.post__header a {
+    color: #00A8CC;
+}
+
+.post__list {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post__item {
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+
+.work__item {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.work__item__img {
+    border-radius: 4px;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.work__item__content .description {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.work__item__content .header {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.work__item__content .content {
+    max-width: 560px;
+}
+
+.work__item__time {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 18px;
+    padding: 0 0.75rem;
+    background-color: #142850;
+    border-radius: 16px;
+    margin: 4px 2rem 2px 0;
+}
+
+.work__item__detail {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.footer {
+    margin: 60px 0;
+}
+
+.footer__connect {
+    margin: 20px 20px;
+}
+
+.footer__connect--btn {
+    margin: 0 1.5rem;
+}
+
+.footer__connect--btn:hover svg path {
+    fill: #00A8CC;
+    transition: fill ease-in .2s;
+    box-shadow: #00A8CC 2px 2px 8px 2px;
+}
+
+@media screen and (max-width: 450px) {
+    .container section {
+        padding: 0 10px;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 20px;
+    }
+
+    .menu {
+        color: var(--white-color);
+        background-color: #00A8CC;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .header__bars {
+        display: block;
+    }
+
+    .introduce {
+        flex-direction: column-reverse;
+    }
+
+    .introduce__infor {
+        padding: 0;
+        align-items: center;
+    }
+
+    .post__header {
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .post__header a {
+        display: none;
+    }
+
+    .post__list {
+        flex-direction: column;
+    }
+
+    .post__item {
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+
+    .post__item .header {
+        font-size: 22px;
+    }
+
+    .work__header {
+        text-align: center;
+    }
+
+    .work__item {
+        flex-direction: column;
+    }
+
+    .work__item__content .header {
+        font-size: 24px;
+    }
+
+    .work__item__img {
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+    }
+}
