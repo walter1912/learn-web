@@ -71,9 +71,9 @@
                     </div>
                     <input type="button" class="btn btn-form" value="Sign In">
                 </form>
-                <p class="form__continue">
+                <span class="form__continue">
                     or continue with
-                </p>
+                </span>
                 <div class="form__connect">
                     <button class="btn btn-icon">
                         <span>
@@ -110,9 +110,6 @@
                                 d="M40 20.121C40 9.07261 31.0484 0.121002 20 0.121002C8.95161 0.121002 -1.90735e-06 9.07261 -1.90735e-06 20.121C-1.90735e-06 30.1033 7.31371 38.3775 16.875 39.8791V25.9025H11.7944V20.121H16.875V15.7146C16.875 10.7025 19.8589 7.9339 24.429 7.9339C26.6177 7.9339 28.9064 8.32423 28.9064 8.32423V13.2436H26.3839C23.9 13.2436 23.125 14.7855 23.125 16.367V20.121H28.6718L27.7847 25.9025H23.125V39.8791C32.6863 38.3775 40 30.1033 40 20.121Z"
                                 fill="#8699DA" />
                         </svg>
-
-
-
                     </button>
                     <button class="btn btn-icon">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +134,7 @@
                 </div>
             </div>
             <span class="img-right">
-                <img src="./assets/imgs/picture.svg" alt="picture" max-width="960px" max-height="848.96px" />
+                <img src="https://www.figma.com/file/LwCMwcqXW3Uqkb1n3X3hAg/UI-Day-001---Login-Page-(Community)-(Copy)?node-id=1%3A19" alt="picture" max-width="960px" max-height="848.96px" />
             </span>
         </section>
     </div>
@@ -174,7 +171,9 @@
             if (icon.classList.contains("fa-bars")) {
                 icon.classList.remove("fa-bars");
                 icon.classList.add("fa-times");
+                header__navbar.style.transition = "height .5s linear 1s";
                 header__navbar.style.display = "flex";
+                
             }
             else {
                 icon.classList.remove("fa-times");
