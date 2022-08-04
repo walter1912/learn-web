@@ -1,0 +1,20 @@
+.footer {
+    margin: 60px 0;
+
+    &__connect {
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+
+        &--btn {
+            margin: 0 1.5rem;
+
+            &:hover svg path {
+                fill: #00A8CC;
+                transition: fill ease-in .2s;
+                box-shadow: #00A8CC 2px 2px 8px 2px;
+            }
+        }
+
+    }
+}

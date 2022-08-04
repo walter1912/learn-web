@@ -1,0 +1,68 @@
+@import "../../assets/variable.scss"; 
+
+
+.container section {
+    padding: 0 80px;
+}
+.header-body {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu__nav {
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.introduce {
+    margin: 40px 0;
+    flex-direction: row;
+    &__infor {
+        flex-direction: column;
+        padding-right: 40px;
+        max-width: 540px;
+
+        .header {
+            font-size: 2.75rem;
+            font-weight: 700;
+            max-width: 460px;
+        }
+        .download {
+            color: $white;
+            background-color: $red;
+            max-width: 208px;
+            padding: 6px;
+            border-radius: 4px;
+        }
+    }
+
+    &__img {
+        margin: 0 40px;
+        border-radius: 50%;
+    }
+}
+
+.post {
+    background-color: $bgrColor;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+    &__header a {
+        color: #00A8CC;
+    }
+
+    &__list {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+}
+
+
