@@ -1,11 +1,37 @@
+@import '../../assets/variable.scss';
+
 header {
     margin: 30px;
     display: flex;
     justify-content: flex-end;
+
+    .bars {
+        display: none;
+    }
 
     .link {
         margin-right: 30px;
         font-weight: 600;
         font-size: 20px;
     }
+}
+
+@media screen and (max-width: $small) {
+    header {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+
+        .menu {
+            color: $white;
+            background-color: #00A8CC;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bars {
+            display: block;
+        }
+    }
+
 }

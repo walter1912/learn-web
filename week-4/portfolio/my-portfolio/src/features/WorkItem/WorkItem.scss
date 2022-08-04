@@ -40,3 +40,9 @@
         opacity: 0.7;
     }
 }
+
+@media screen and (max-width: $small) {
+    .work__item {
+        flex-direction: column;
+    }
+}

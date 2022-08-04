@@ -1,5 +1,13 @@
+@import '../../assets/variable.scss';
 .post__item {
     background-color: #fff;
     padding: 2rem 1rem;
     border-radius: 4px;
+}
+
+@media screen and (max-width: $small) {
+    .post__item {
+        margin: 1rem 0.5rem;
+        border-bottom: 1px solid $bgrColor;
+    }
 }

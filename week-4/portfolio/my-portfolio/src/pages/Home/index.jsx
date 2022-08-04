@@ -17,7 +17,7 @@ const Home = props => {
     return (
         <div>
             <Header />
-            <div className="container">
+            <div className="container col-sm-8 col-10">
                 <section className="introduce d-flex">
                     <div className="introduce__infor d-flex">
                         <h2 className="header">Hi, I am John,
