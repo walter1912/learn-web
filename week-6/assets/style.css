@@ -1,0 +1,119 @@
+/* global */
+body {
+    font-family: "New York Extra Large";
+}
+
+p {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+/* header */
+.header {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__link {
+    padding: 0 1rem;
+}
+
+.articles__item img {
+    width: 100%;
+    max-height: 176px;
+}
+
+
+/* body */
+/* /intriduce */
+.introduce img {
+    max-height: 533px;
+}
+
+.introduce h1 {
+    font-size: 3rem;
+    padding: 0 3rem;
+}
+
+/* list artical */
+
+.articles__des {
+    font-family: "SF Mono";
+    font-size: calc(1rem + 2px);
+}
+
+.articles hr {
+    color: #000;
+    border-top: 2px solid #000;
+}
+
+.articles__item {
+    margin-bottom: 3rem;
+}
+
+.articles__item .des {
+    font-weight: 500;
+    font-size: calc(1rem + 4px);
+    margin-top: 1rem;
+    font-family: "SF Pro Display";
+}
+.articles__item__img {
+    height: 176px;
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF UI Text";
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__link {
+    margin: 1rem .2rem;
+}
+.footer__link a{
+    font-size: calc(1rem + 2px);
+    text-transform: uppercase;
+}
+.footer__link--bold a{
+    font-weight: 800;
+}
+.footer__link--thin a{
+    font-weight: 400;
+}
+.footer__connect {
+    font-weight: 500;
+    margin: 2rem 0;
+}
+.footer__connect a {
+    margin: 0 .5rem;
+    text-decoration:underline;
+}
+.footer__source {
+    font-size: calc(1rem - 4px);
+    font-weight: 500;
+}
