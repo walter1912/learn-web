@@ -33,75 +33,76 @@
         <header class="header">
             <h1 class="header__logo">NORDIC ROSE</h1>
             <nav class="nav">
+                <div class="nav__icon">
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                </div>
                 <ul class="header__menu">
                     <li class="header__link"> <a href=" #" target="_blank" rel="noopener noreferrer">BLOG</a></li>
                     <li class="header__link"> <a href=" #" target="_blank" rel="noopener noreferrer">ABOUT</a></li>
                     <li class="header__link"> <a href=" #" target="_blank" rel="noopener noreferrer">LINKS</a></li>
                     <li class="header__link"> <a href=" #" target="_blank" rel="noopener noreferrer">PROJECTS</a></li>
                 </ul>
-                <div class="nav__icon">
-                    <span class="dash"></span>
-                    <span class="dash"></span>
-                    <span class="dash"></span>
-                </div>
+              
             </nav>
         </header>
         <!-- body -->
-        <article class="col-8 container">
+        <article class="col-sm-8 col-12 container">
             <section class="introduce">
                 <img src="./assets/imgs/logo.png" alt="" width="100%">
                 <h1 class="text-center">A few words about this blog platform, Ghost, and how this site was made</h1>
             </section>
-            <section class="articles container col-8">
+            <section class="articles container col-sm-8 col-12">
                 <p class="articles__des">Why Ghost (& Figma) instead of Medium, WordPress or other options?</p>
                 <hr />
                 <h2 class="articles__title text-center">All articles</h2>
                 <ul class="articles__list row">
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic1.jfif" alt="" class="articles__item__img">
                         <p class="des ">Here are some things you should know regarding how we work </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic2.jfif" alt="" class="articles__item__img">
                         <p class="des ">Granny gives everyone the finger, and other tips from OFFF Barcelona </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic3.jfif" alt="" class="articles__item__img">
                         <p class="des ">Hello world, or, in other words, why this blog exists </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic4.jfif" alt="" class="articles__item__img">
                         <p class="des ">Here are some things you should know regarding how we work </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic5.jfif" alt="" class="articles__item__img">
                         <p class="des ">Connecting artificial intelligence with digital product design</p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic6.jfif" alt="" class="articles__item__img">
                         <p class="des ">It’s all about finding the perfect balance </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic7.jfif" alt="" class="articles__item__img">
                         <p class="des ">I believe learning is the most important skill</p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic8.jfif" alt="" class="articles__item__img">
                         <p class="des ">Clients are part of the team</p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic9.jfif" alt="" class="articles__item__img">
                         <p class="des ">Clients are part of the team </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic10.jfif" alt="" class="articles__item__img">
                         <p class="des ">Here are some things you should know regarding how we work </p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic11.jfif" alt="" class="articles__item__img">
                         <p class="des">Connecting artificial intelligence with digital product design</p>
                     </li>
-                    <li class="articles__item col-6">
+                    <li class="articles__item col-sm-6 col-12">
                         <img src="./assets/imgs/pic12.jfif" alt="" class="articles__item__img">
                         <p class="des ">How modern remote working tools get along with Old School Cowboy's methods </p>
                     </li>
@@ -138,7 +139,7 @@
                 </ul>
             </nav>
             <h1 class="footer__logo">NORDIC ROSE</h1>
-            <p class="footer__des col-5">
+            <p class="footer__des col-sm-5 col-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas efficitur. In
                 hac
                 habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus.
@@ -153,6 +154,27 @@
             </p>
         </footer>
     </div>
+    <script>
+        var navIcon = document.querySelector(".nav__icon")
+        var navMenu = document.querySelector(".header__menu")
+        // Show NavMenu
+        addEvent(navIcon)
+        // Hide NavMenu
+        document.querySelectorAll(".header__link").forEach(n => removeEvent(n))
+
+        function removeEvent(params) {
+            params.addEventListener("click", () => {
+                navIcon.classList.remove("active");
+                navMenu.classList.remove("active");
+            })
+        }
+        function addEvent(params) {
+            params.addEventListener("click", () => {
+                navIcon.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+        }
+    </script>
 </body>
 
 </html>

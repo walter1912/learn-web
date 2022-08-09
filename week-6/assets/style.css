@@ -117,3 +117,42 @@ h2 {
     font-size: calc(1rem - 4px);
     font-weight: 500;
 }
+
+/* header responsive */
+.dash {
+    transition: 0.3s ease;
+    border-top: 1.6px solid #000;
+    width: 30px;
+    height: 10px;
+}
+@media screen and (max-width: 475px) {
+    .header__menu {
+        position: fixed;
+        color:#fff;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        flex-direction: column;
+        justify-content: start;
+        transition: 0.3s ease-in;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        padding: 20px 0;
+    }
+    .header__menu.active {
+        display: flex;
+        right: 0;
+    }
+    .nav__icon{
+        display: block;
+    }
+    .nav__icon.active .dash:nth-child(2) {
+        display: none;
+    }
+    .nav__icon.active .dash:nth-child(1) {
+        transform: translateY(10px) translateX(-5px) rotate(45deg);
+    }
+    .nav__icon.active .dash:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}
